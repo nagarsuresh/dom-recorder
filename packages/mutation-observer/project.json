@@ -1,0 +1,32 @@
+{
+  "root": "packages/mutation-observer",
+  "sourceRoot": "packages/mutation-observer/src",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/mutation-observer",
+        "main": "packages/mutation-observer/src/index.ts",
+        "tsConfig": "packages/mutation-observer/tsconfig.lib.json",
+        "assets": ["packages/mutation-observer/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/mutation-observer/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/mutation-observer"],
+      "options": {
+        "jestConfig": "packages/mutation-observer/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

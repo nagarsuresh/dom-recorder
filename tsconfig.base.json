@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@dom-recorder/mutation-observer": [
+        "packages/mutation-observer/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

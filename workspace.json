@@ -1,4 +1,9 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "mutation-observer": "packages/mutation-observer",
+    "server": "packages/server",
+    "ui": "packages/ui",
+    "ui-e2e": "packages/ui-e2e"
+  }
 }
